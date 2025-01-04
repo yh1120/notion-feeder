@@ -34,6 +34,7 @@ export async function getFeedUrlsFromNotion() {
       },
     });
   } catch (err) {
+    console.log(NOTION_API_TOKEN),
     console.error(err);
     return [];
   }
